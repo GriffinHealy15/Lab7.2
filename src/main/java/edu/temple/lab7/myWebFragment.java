@@ -50,7 +50,7 @@ public class myWebFragment extends Fragment {
     public String getUrlText() {
         return newestURL;
     }
-
+    
     public void goToUrl() {
         WebView webView = getView().findViewById(R.id.Display);
         webView.setWebViewClient(new WebViewClient());

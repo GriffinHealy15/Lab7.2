@@ -21,6 +21,7 @@ public class myWebPageAdapter extends FragmentStatePagerAdapter {
         return myWebFragmentArray.get(currentFragmentPos);
     }
 
+
     @Override
     public int getCount() {
         return myWebFragmentArray.size();

@@ -14,11 +14,26 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
+
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.DEFAULT" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
+
             </intent-filter>
+
+            <intent-filter><action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <!-- Include the host attribute if you want your app to respond to URLs for a specific domain. -->
+                <data android:scheme="https" android:host="www.amazon.com" />
+                <!-- android:host="www.amazon.com" -->
+                <!-- The BROWSABLE category is required to get links from webpages. -->
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+
         </activity>
     </application>
 
